@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import './App/index.css';
+import './TicTacToe/tictactoe.css';
+import { App } from './App/App';
+import * as serviceWorker from './App/serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
