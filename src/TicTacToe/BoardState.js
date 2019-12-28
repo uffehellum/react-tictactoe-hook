@@ -6,7 +6,7 @@ export class BoardState {
     }
 
     static Blank = () => new BoardState(Array(9).fill(null), true);
-    
+
     status() {
         if (this.winner)
             return "Vinderen er: " + this.winner;
@@ -33,12 +33,12 @@ function _calculateWinner(marks) {
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6],
-      ];
-      for (const line of lines) {
+    ];
+    for (const line of lines) {
         const [a, b, c] = line;
         if (marks[a] && marks[a] === marks[b] && marks[a] === marks[c]) {
-          return marks[a];
+            return marks[a];
         }
-      }
-      return null;
+    }
+    return null;
 }
